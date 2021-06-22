@@ -85,8 +85,8 @@ class Service:
                 headers[key] = value
 
         # Create suffixes
-        okay  = (Fore.WHITE+'|'+Fore.GREEN+ getDomain(url) +Fore.WHITE'| > '+Fore.WHITE+'|'+Fore.YELLOW+'Sms Completed'+Fore.WHITE+'|')
-        error = (Fore.WHITE+'|'+Fore.GREEN+ getDomain(url) +Fore.WHITE'| > '+Fore.WHITE+'|'+Fore.RED+'Sms Failed'+Fore.WHITE+'|')
+        okay  = Fore.WHITE+'|'+Fore.GREEN+ getDomain(url) +Fore.WHITE'| > '+Fore.WHITE+'|'+Fore.YELLOW+'Sms Completed'+Fore.WHITE+'|'
+        error = Fore.WHITE+'|'+Fore.GREEN+ getDomain(url) +Fore.WHITE'| > '+Fore.WHITE+'|'+Fore.RED+'Sms Failed'+Fore.WHITE+'|'
 
         try:
             # If data type is 'json'
